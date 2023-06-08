@@ -3,25 +3,24 @@
 @tailwind utilities;
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .icons {
-  @apply w-9 h-9 mr-3 rounded-lg flex items-center justify-center border text-second border-slate-300 hover:border-second hover:bg-second hover:text-bgLight hover:shadow-lg transition duration-300;
+  @apply mr-3 flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300 text-second transition duration-300 hover:border-second hover:bg-second hover:text-bgLight hover:shadow-lg dark:border-slate-700;
 }
 
 .icons-footer {
-  @apply w-9 h-9 mr-3 rounded-lg flex items-center justify-center border-0 text-bgLight hover:text-ungu hover:shadow-lg transition duration-300;
+  @apply mr-3 flex h-9 w-9 items-center justify-center rounded-lg border-0 text-bgLight transition duration-300 hover:text-ungu hover:shadow-lg;
 }
 
 .nav-fixed {
-  @apply fixed z-[999] bg-bgLight bg-opacity-50;
-  backdrop-filter: blur(5px);
+  @apply fixed z-[999] bg-bgLight bg-opacity-50 backdrop-blur-sm dark:bg-secprimary dark:bg-opacity-50;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav-line {
-  @apply w-[30px] h-[2px] my-2 block bg-primary;
+  @apply my-2 block h-[2px] w-[30px] bg-primary dark:bg-bgLight;
 }
 
 .nav-active > span:nth-child(1) {
@@ -34,4 +33,8 @@ body {
 
 .nav-active > span:nth-child(3) {
   @apply -rotate-45;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
 }
