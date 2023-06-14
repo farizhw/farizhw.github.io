@@ -22,7 +22,7 @@ module.exports = {
       },
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'goyang': 'goyang 1s ease-in-out infinite',
+        'goyang': 'goyang 0.8s ease-in-out infinite',
       },
       keyframes: {
         goyang: {
