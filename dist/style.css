@@ -931,6 +931,11 @@ video {
   background-color: rgb(240 242 249 / var(--tw-bg-opacity));
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 35 46 / var(--tw-bg-opacity));
+}
+
 .bg-secprimary {
   --tw-bg-opacity: 1;
   background-color: rgb(21 24 38 / var(--tw-bg-opacity));
@@ -1459,6 +1464,11 @@ body {
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-secprimary) {
+  --tw-text-opacity: 1;
+  color: rgb(21 24 38 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:shadow-slate-900) {
   --tw-shadow-color: #0f172a;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1623,10 +1633,6 @@ body {
 
   .lg\:rounded-none {
     border-radius: 0px;
-  }
-
-  .lg\:rounded-full {
-    border-radius: 9999px;
   }
 
   .lg\:bg-transparent {
