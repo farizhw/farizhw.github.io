@@ -48,9 +48,9 @@ darkToggle.addEventListener('click', function (e) {
 // Auto Type
 const type = new Typed('.auto-type', {
   strings: [
-    'Fresh Graduate of Informatics Engineering',
-    'FrontEnd Developer',
-    'UI/UX Design',
+    'Fresh Graduate of Informatics Engineering.',
+    'Junior Front-End Developer.',
+    'Junior UI/UX Design.',
   ],
   typeSpeed: 50,
   backSpeed: 50,
